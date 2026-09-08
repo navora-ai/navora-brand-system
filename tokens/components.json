@@ -1,0 +1,85 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "NAVORA Design System — Component Tokens v1.2 (Light/Dark mode)",
+  "button": {
+    "primary": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.inverse}", "dark": "{semantic.surface.inverse}" } } },
+      "text":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.inverse}",   "dark": "{semantic.text.inverse}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.inverse}", "dark": "{semantic.surface.inverse}" } } }
+    },
+    "secondary": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.card}",   "dark": "{semantic.surface.card}" } } },
+      "text":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.primary}",   "dark": "{semantic.text.primary}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.border.default}", "dark": "{semantic.border.default}" } } }
+    },
+    "quiet": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.canvas}",  "dark": "{semantic.surface.canvas}" } } },
+      "text":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.primary}",    "dark": "{semantic.text.primary}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.canvas}",  "dark": "{semantic.surface.canvas}" } } }
+    },
+    "focus": {
+      "ring":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.border.focus}",    "dark": "{semantic.border.focus}" } } }
+    },
+    "disabled": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.subtle}",  "dark": "{semantic.surface.subtle}" } } },
+      "text":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.subtle}",     "dark": "{semantic.text.subtle}" } } }
+    }
+  },
+  "card": {
+    "default": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.card}",    "dark": "{semantic.surface.card}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.border.subtle}",   "dark": "{semantic.border.subtle}" } } }
+    },
+    "evidence": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.evidence.subtle}", "dark": "{semantic.evidence.subtle}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.evidence.default}","dark": "{semantic.evidence.default}" } } }
+    }
+  },
+  "tag": {
+    "neutral": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.subtle}",  "dark": "{semantic.surface.subtle}" } } },
+      "text":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.primary}",    "dark": "{semantic.text.primary}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.border.subtle}",   "dark": "{semantic.border.subtle}" } } }
+    },
+    "evidence": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.evidence.subtle}", "dark": "{semantic.evidence.subtle}" } } },
+      "text":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.primary}",    "dark": "{semantic.text.primary}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.evidence.default}","dark": "{semantic.evidence.default}" } } }
+    }
+  },
+  "nav": {
+    "default": {
+      "bg":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.inverse}", "dark": "{semantic.surface.inverse}" } } },
+      "text": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.inverse}",    "dark": "{semantic.text.inverse}" } } }
+    },
+    "active": {
+      "bg":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.brand.primary}",   "dark": "{semantic.brand.primary}" } } },
+      "text": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.inverse}",    "dark": "{semantic.text.inverse}" } } }
+    }
+  },
+  "input": {
+    "default": {
+      "bg":     { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.card}",   "dark": "{semantic.surface.card}" } } },
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.border.default}", "dark": "{semantic.border.default}" } } },
+      "text":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.primary}",   "dark": "{semantic.text.primary}" } } }
+    },
+    "focus": {
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.border.focus}",   "dark": "{semantic.border.focus}" } } }
+    },
+    "error": {
+      "border": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.state.conflict}",  "dark": "{semantic.state.conflict}" } } }
+    },
+    "disabled": {
+      "bg":   { "$type": "color", "$extensions": { "mode": { "light": "{semantic.surface.subtle}", "dark": "{semantic.surface.subtle}" } } },
+      "text": { "$type": "color", "$extensions": { "mode": { "light": "{semantic.text.subtle}",    "dark": "{semantic.text.subtle}" } } }
+    }
+  },
+  "status": {
+    "new":      { "bg": "{semantic.surface.subtle}", "text": "{semantic.state.new}" },
+    "waiting":  { "bg": "{semantic.surface.subtle}", "text": "{semantic.state.waiting}" },
+    "action":   { "bg": "{semantic.surface.subtle}", "text": "{semantic.state.action-required}" },
+    "verified": { "bg": "{semantic.surface.subtle}", "text": "{semantic.state.verified}" },
+    "safety":   { "bg": "{semantic.surface.subtle}", "text": "{semantic.state.safety}" },
+    "conflict": { "bg": "{semantic.surface.subtle}", "text": "{semantic.state.conflict}" }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "NAVORA Design System — Effect Tokens v1.2",
+  "elevation": {
+    "card": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(8, 28, 51, 0.08)",
+        "offsetX": "0px",
+        "offsetY": "8px",
+        "blur": "24px",
+        "spread": "0px"
+      }
+    }
+  },
+  "focus": {
+    "accessible": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(199, 156, 61, 0.45)",
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "3px"
+      },
+      "$description": "Gold focus ring for accessible keyboard navigation. WCAG 2.1 compliant."
+    }
+  }
+}

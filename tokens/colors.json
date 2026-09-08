@@ -1,0 +1,81 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "NAVORA Design System — Color Tokens v1.2",
+  "primitives": {
+    "color": {
+      "navy": {
+        "700": { "$type": "color", "$value": "#173a61" },
+        "800": { "$type": "color", "$value": "#0d2948" },
+        "900": { "$type": "color", "$value": "#08233a" }
+      },
+      "ivory": {
+        "50": { "$type": "color", "$value": "#f7f3ea" },
+        "100": { "$type": "color", "$value": "#f4efe6" }
+      },
+      "white": { "$type": "color", "$value": "#ffffff" },
+      "charcoal": {
+        "700": { "$type": "color", "$value": "#4a4a46" },
+        "900": { "$type": "color", "$value": "#1e1e1e" }
+      },
+      "stone": {
+        "100": { "$type": "color", "$value": "#e9e4db" },
+        "300": { "$type": "color", "$value": "#cfc8bc" },
+        "500": { "$type": "color", "$value": "#8a8f98" }
+      },
+      "gold": {
+        "500": { "$type": "color", "$value": "#b9954e" },
+        "600": { "$type": "color", "$value": "#a9791f" }
+      },
+      "sage": {
+        "500": { "$type": "color", "$value": "#668a7a" }
+      },
+      "blue": {
+        "400": { "$type": "color", "$value": "#6e8fae" }
+      },
+      "red": {
+        "500": { "$type": "color", "$value": "#b65353" }
+      },
+      "greige": {
+        "300": { "$type": "color", "$value": "#ded7cb" }
+      }
+    }
+  },
+  "semantic": {
+    "surface": {
+      "canvas":  { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.ivory.50}",  "dark": "{primitives.color.navy.900}" } } },
+      "subtle":  { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.ivory.100}", "dark": "{primitives.color.navy.800}" } } },
+      "card":    { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.white}",     "dark": "{primitives.color.navy.800}" } } },
+      "inverse": { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.navy.900}",  "dark": "{primitives.color.ivory.50}" } } }
+    },
+    "text": {
+      "primary":  { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.navy.900}",    "dark": "{primitives.color.ivory.50}" } } },
+      "secondary":{ "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.charcoal.700}","dark": "{primitives.color.stone.300}" } } },
+      "inverse":  { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.ivory.50}",    "dark": "{primitives.color.navy.900}" } } },
+      "subtle":   { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.stone.500}",   "dark": "{primitives.color.stone.300}" } } },
+      "action":   { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.gold.600}",    "dark": "{primitives.color.gold.500}" } } },
+      "disabled": { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.charcoal.700}","dark": "{primitives.color.ivory.100}" } } }
+    },
+    "border": {
+      "subtle":  { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.greige.300}", "dark": "{primitives.color.navy.700}" } } },
+      "strong":  { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.stone.300}",  "dark": "{primitives.color.stone.500}" } } },
+      "default": { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.stone.300}",  "dark": "{primitives.color.navy.700}" } } },
+      "focus":   { "$type": "color", "$extensions": { "mode": { "light": "{primitives.color.gold.500}",   "dark": "{primitives.color.gold.500}" } } }
+    },
+    "state": {
+      "verified":       { "$type": "color", "$value": "#668a7a" },
+      "imported":       { "$type": "color", "$value": "#6e8fae" },
+      "safety":         { "$type": "color", "$value": "#b65353" },
+      "new":            { "$type": "color", "$value": "#6e8fae" },
+      "changed":        { "$type": "color", "$value": "#b9954e" },
+      "waiting":        { "$type": "color", "$extensions": { "mode": { "light": "#8a8f98", "dark": "#cfc8bc" } } },
+      "in-clarification":{ "$type": "color", "$extensions": { "mode": { "light": "#a9791f", "dark": "#b9954e" } } },
+      "missing":        { "$type": "color", "$value": "#b65353" },
+      "conflict":       { "$type": "color", "$value": "#b65353" },
+      "action-required":{ "$type": "color", "$extensions": { "mode": { "light": "#a9791f", "dark": "#b9954e" } } },
+      "consent-active": { "$type": "color", "$value": "#668a7a" },
+      "consent-expired":{ "$type": "color", "$extensions": { "mode": { "light": "#8a8f98", "dark": "#cfc8bc" } } },
+      "consent-revoked":{ "$type": "color", "$value": "#b65353" },
+      "disabled":       { "$type": "color", "$extensions": { "mode": { "light": "#cfc8bc", "dark": "#8a8f98" } } }
+    }
+  }
+}
